@@ -85,7 +85,7 @@ export default function CustomerScan() {
                 <div className="pfl-scanpage__card pfl-scanpage__card--customer">
                   <h2>{result.name}</h2>
                   <div className="pfl-scanpage__price">PKR {Number(result.retailPrice || 0).toLocaleString()}</div>
-                  <div className="pfl-scanpage__expiry">Expiry: {result.expiryDate}</div>
+                  {/* <div className="pfl-scanpage__expiry">Expiry: {result.expiryDate}</div> */}
                 </div>
               )}
             </div>

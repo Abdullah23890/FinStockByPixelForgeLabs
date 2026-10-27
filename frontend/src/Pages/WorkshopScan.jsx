@@ -111,7 +111,7 @@ export default function WorkshopScan() {
                           <tr>
                             <th>Batch No</th>
                             <th>Qty</th>
-                            <th>Expiry</th>
+                            {/* <th>Expiry</th> */}
                           </tr>
                         </thead>
                         <tbody>
@@ -119,7 +119,7 @@ export default function WorkshopScan() {
                             <tr key={b._id}>
                               <td>{b.batchNo}</td>
                               <td>{b.quantity}</td>
-                              <td>{b.expiryDate ? new Date(b.expiryDate).toLocaleDateString() : "—"}</td>
+                              {/* <td>{b.expiryDate ? new Date(b.expiryDate).toLocaleDateString() : "—"}</td> */}
                             </tr>
                           ))}
                         </tbody>
