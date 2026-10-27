@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { getProducts } from "../Api/product.api.js";
-import { getNotExpireBatches } from "../Api/batch.api.js";
+import { getBatchesProduct } from "../Api/batch.api.js";
 import MainContent from "../Components/MainContent.jsx";
 import "../Css/ScanPage.css";
 
@@ -13,7 +13,7 @@ export default function CustomerScan() {
   const inputRef = useRef(null);
 
   useEffect(() => {
-    Promise.all([getProducts(), getNotExpireBatches()]).then(([pRes, bRes]) => {
+    Promise.all([getProducts(), getBatchesProduct()]).then(([pRes, bRes]) => {
       setProducts(pRes.data.data);
       const map = {};
       for (const b of bRes.data.data) {
