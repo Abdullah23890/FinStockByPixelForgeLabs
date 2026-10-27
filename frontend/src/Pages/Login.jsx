@@ -154,7 +154,7 @@ useEffect(() => {
         </form>
 
         <a href="https://pixelforgelabs.edgeone.app" target="_blank" className="pfl-login__web">
-            <IconExternalLink size={17} />  Visit Our Website
+            <IconExternalLink size={17} />  Powered By Pixel Forge Labs
         </a>
 
       </div>

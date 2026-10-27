@@ -198,6 +198,8 @@
 
 .pfl-login__web {
   display: block;
+  align-items: center;
+  justify-content: center;
   margin-top: 14px;
   text-align: center;
   background: #FF6B35;
