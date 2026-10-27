@@ -41,7 +41,7 @@ const REPORTS = [
   { id: "product", title: "Product Report", description: "Stock quantity & batch count per product." },
   { id: "supplier", title: "Supplier Report", description: "Purchases, paid, remaining & credit notes per supplier." },
   { id: "customer", title: "Customer Report", description: "Sales, paid, due & credit notes per customer." },
-  { id: "expiry", title: "Expired / Near-Expiry Stock", description: "Batches expired or expiring soon." },
+  // { id: "expiry", title: "Expired / Near-Expiry Stock", description: "Batches expired or expiring soon." },
   { id: "topProducts", title: "Top 20 Products", description: "Best-selling products by quantity." },
   { id: "sales", title: "Sales Report", description: "Detailed list of all sales." },
   { id: "purchase", title: "Purchase Report", description: "Detailed list of all purchases." },

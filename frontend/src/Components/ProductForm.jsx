@@ -94,7 +94,7 @@ export default function ProductForm({
             value={form.name}
             onChange={handleChange}
             className={errors.name ? "is-invalid" : ""}
-            placeholder="e.g. Matte Lipstick - Shade 12"
+            placeholder="e.g. Boss Chairs"
           />
           {errors.name && <span className="pfl-prform__error">{errors.name}</span>}
         </div>

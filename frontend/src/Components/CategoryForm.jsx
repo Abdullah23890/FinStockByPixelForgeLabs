@@ -43,7 +43,7 @@ export default function CategoryForm({ initialData = null, onSubmit, onCancel, s
           value={form.name}
           onChange={handleChange}
           className={errors.name ? "is-invalid" : ""}
-          placeholder="e.g. Skin Care"
+          placeholder="e.g. Plastic Chairs"
         />
         {errors.name && <span className="pfl-catform__error">{errors.name}</span>}
       </div>
