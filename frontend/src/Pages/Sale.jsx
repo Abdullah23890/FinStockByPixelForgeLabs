@@ -15,7 +15,7 @@ import {
     getCustomers 
 } from "../Api/customer.api.js";
 import { 
-    getNotExpireBatches
+    getBatchesProduct
 } from "../Api/batch.api.js";
 import { 
     getSales, 
@@ -75,7 +75,7 @@ export default function Sale() {
         getSales(),
         getProducts(),
         getCustomers(),
-        getNotExpireBatches(),
+        getBatchesProduct(),
         getCreditNotes(),
         getSetting(),
       ]);
@@ -269,7 +269,7 @@ export default function Sale() {
     <>
       <MainContent
         pageTitle="Sales"
-        pageSubtitle="Billing for retail, wholesale, and parlor customers."
+        pageSubtitle="Billing for retail, wholesale customers."
         sections={[
           {
             id: "sale-management",

@@ -4,6 +4,6 @@ export const getBatches = () => {
     return Api.get("/batches");
 }
 
-export const getNotExpireBatches = () => {
-    return Api.get("/batches/getNotExpireBatches");
+export const getBatchesProduct = () => {
+    return Api.get("/batches/getBatchesProduct");
 }

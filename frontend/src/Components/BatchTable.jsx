@@ -43,12 +43,12 @@ export default function BatchTable({ batches = [], onProfile, loading = false })
           />
         </div>
 
-        <select className="pfl-battable__select" value={expiryFilter} onChange={(e) => setExpiryFilter(e.target.value)}>
+        {/* <select className="pfl-battable__select" value={expiryFilter} onChange={(e) => setExpiryFilter(e.target.value)}>
           <option value="all">All Batches</option>
           <option value="ok">Good</option>
           <option value="nearExpiry">Near Expiry (≤30 days)</option>
           <option value="expired">Expired</option>
-        </select>
+        </select> */}
 
         {/* {onAddNew && (
           <button className="pfl-battable__add-btn" onClick={onAddNew}>
@@ -66,7 +66,7 @@ export default function BatchTable({ batches = [], onProfile, loading = false })
               <th>Batch No</th>
               <th>Quantity</th>
               <th>Purchase Price</th>
-              <th>Expiry</th>
+              {/* <th>Expiry</th> */}
               <th className="pfl-battable__actions-col">Actions</th>
             </tr>
           </thead>
@@ -96,11 +96,11 @@ export default function BatchTable({ batches = [], onProfile, loading = false })
                     <td className="pfl-battable__batchno">{b.batchNo}</td>
                     <td>{b.quantity}</td>
                     <td>PKR {Number(b.purchasePrice || 0).toLocaleString()}</td>
-                    <td>
+                    {/* <td>
                       <span className={`pfl-battable__expiry pfl-battable__expiry--${status}`}>
                         {b.expiryDate ? new Date(b.expiryDate).toLocaleDateString() : "—"}
                       </span>
-                    </td>
+                    </td> */}
                     <td className="pfl-battable__actions-col">
                       <button className="pfl-battable__action-btn" onClick={() => onProfile?.(b)}>Profile</button>
                       {/* <button className="pfl-battable__action-btn" onClick={() => onEdit?.(b)}>Edit</button> */}

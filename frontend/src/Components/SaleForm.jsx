@@ -158,18 +158,8 @@ export default function SaleForm({
     const availableBatches = batchesByProduct[product._id] || [];
 
     const batch = [...availableBatches]
-      .filter((batch) => Number(batch.quantity) > 0)
-      .sort((a, b) => {
-        const expiryA = a.expiryDate
-          ? new Date(a.expiryDate).getTime()
-          : Number.MAX_SAFE_INTEGER;
-
-        const expiryB = b.expiryDate
-          ? new Date(b.expiryDate).getTime()
-          : Number.MAX_SAFE_INTEGER;
-
-        return expiryA - expiryB;
-      })[0];
+  .filter((b) => Number(b.quantity) > 0)
+  .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))[0];
 
     if (!batch) {
       setErrors((prev) => ({

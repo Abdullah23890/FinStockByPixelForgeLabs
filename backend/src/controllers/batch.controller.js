@@ -27,19 +27,15 @@ export const getBatches = async (req, res) => {
     }
 }
 
-export const getNotExpireBatches = async (req, res) => {
+export const getBatchesProduct = async (req, res) => {
     try {
 
-        const today = new Date ();
-        today.setHours(0, 0, 0, 0);
-        const noExpire = await Batches.find({
-            expiryDate : { $gt: today },
-        }).populate("purchaseId", "purchaseNumber").populate("createdBy", "name role").populate("product", "name").sort({ expiryDate: -1 });
+        const batch = await Batches.find().populate("purchaseId", "purchaseNumber").populate("createdBy", "name role").populate("product", "name").sort({ expiryDate: -1 });
 
         return res.status(200).json({
             success : true,
             message : "Active Batches Fetched Successfully",
-            data : noExpire
+            data : batch
         });
             
 

@@ -10,12 +10,12 @@ import {
 
 import {
     getBatches,
-    getNotExpireBatches
+    getBatchesProduct
 } from "../controllers/batch.controller.js";
 
 const router = express.Router();
 
 router.get("/", verifyToken, authRole("admin", "saleManager", "counter"), getBatches);
-router.get("/getNotExpireBatches", verifyToken, authRole("admin", "saleManager", "counter"), getNotExpireBatches);
+router.get("/getBatchesProduct", verifyToken, authRole("admin", "saleManager", "counter"), getBatchesProduct);
 
 export default router;
