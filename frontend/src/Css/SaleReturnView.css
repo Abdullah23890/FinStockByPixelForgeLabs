@@ -1,0 +1,144 @@
+.pfl-retview {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-retview__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.pfl-retview__head h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #16203A;
+}
+
+.pfl-retview__sub {
+  font-size: 12.5px;
+  color: #6B7590;
+}
+
+.pfl-retview__refund-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 107, 53, 0.12);
+  color: #FF6B35;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.pfl-retview__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pfl-retview__meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pfl-retview__meta label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6B7590;
+  text-transform: uppercase;
+}
+
+.pfl-retview__meta span {
+  font-size: 13px;
+  color: #16203A;
+}
+
+.pfl-retview__reason {
+  background: #F5F7FB;
+  border: 1px solid #E7EAF3;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.pfl-retview__reason label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6B7590;
+  text-transform: uppercase;
+}
+
+.pfl-retview__reason p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #16203A;
+}
+
+.pfl-retview__items {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.pfl-retview__items th {
+  text-align: left;
+  padding: 8px 10px;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6B7590;
+  background: #F5F7FB;
+}
+
+.pfl-retview__items td {
+  padding: 8px 10px;
+  border-top: 1px solid #EFF1F7;
+  color: #16203A;
+}
+
+.pfl-retview__batchno {
+  font-family: "Courier New", monospace;
+  font-size: 11.5px;
+}
+
+.pfl-retview__col-center { text-align: center; }
+.pfl-retview__col-right { text-align: right; }
+.pfl-retview__amount-cell { font-weight: 700; }
+
+.pfl-retview__totals {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-left: auto;
+  width: 100%;
+  max-width: 260px;
+  border-top: 1px solid #E7EAF3;
+  padding-top: 10px;
+}
+
+.pfl-retview__totals > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #16203A;
+}
+
+.pfl-retview__grand {
+  font-weight: 700;
+  color: #FF6B35;
+  border-top: 1px dashed #E7EAF3;
+  padding-top: 6px;
+}
+
+.pfl-retview__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 14px;
+  border-top: 1px solid #E7EAF3;
+}

@@ -1,0 +1,121 @@
+.pfl-batform {
+  background: #ffffff;
+  border: 1px solid #E7EAF3;
+  border-radius: 14px;
+  padding: 22px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-batform__server-error {
+  background: #FDEDEA;
+  border: 1px solid #F5C6BE;
+  color: #B3261E;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 9px;
+  margin-bottom: 16px;
+}
+
+.pfl-batform__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 18px;
+}
+
+.pfl-batform__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pfl-batform__field--full {
+  grid-column: 1 / -1;
+}
+
+.pfl-batform__field label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #16203A;
+}
+
+.pfl-batform__field input,
+.pfl-batform__field select {
+  border: 1px solid #E1E5F0;
+  border-radius: 9px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #16203A;
+  outline: none;
+  background: #fff;
+}
+
+.pfl-batform__field input:focus,
+.pfl-batform__field select:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.12);
+}
+
+.pfl-batform__field select:disabled {
+  background: #F5F7FB;
+  color: #8C97B5;
+  cursor: not-allowed;
+}
+
+.pfl-batform__field input.is-invalid,
+.pfl-batform__field select.is-invalid {
+  border-color: #E3453B;
+}
+
+.pfl-batform__error {
+  font-size: 11.5px;
+  color: #E3453B;
+}
+
+.pfl-batform__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #E7EAF3;
+}
+
+.pfl-batform__btn {
+  border: none;
+  border-radius: 9px;
+  padding: 10px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.pfl-batform__btn--ghost {
+  background: #F5F7FB;
+  color: #16203A;
+}
+
+.pfl-batform__btn--ghost:hover {
+  background: #E7EAF3;
+}
+
+.pfl-batform__btn--primary {
+  background: #FF6B35;
+  color: #fff;
+}
+
+.pfl-batform__btn--primary:hover:not(:disabled) {
+  background: #e85a26;
+}
+
+.pfl-batform__btn--primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .pfl-batform__grid {
+    grid-template-columns: 1fr;
+  }
+}

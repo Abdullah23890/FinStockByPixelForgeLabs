@@ -1,0 +1,239 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.pfl-login {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #14203B 0%, #101A32 55%, #1B2A4C 100%);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 24px;
+}
+
+.pfl-login__panel {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 34px 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.pfl-login__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.pfl-login__mark{
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: rgba(255, 107, 53, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pfl-login__img{
+  width: 50px;
+  height: 50px;
+}
+
+.pfl-login__brand-name {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #14203B;
+}
+
+.pfl-login__title {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #16203A;
+  margin: 0 0 6px;
+}
+
+.pfl-login__subtitle {
+  font-size: 13.5px;
+  color: #6B7590;
+  margin: 0 0 22px;
+  line-height: 1.5;
+}
+
+.pfl-login__server-error {
+  background: #FDEDEA;
+  border: 1px solid #F5C6BE;
+  color: #B3261E;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 9px;
+  margin-bottom: 18px;
+}
+
+.pfl-login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pfl-login__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pfl-login__field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #16203A;
+}
+
+.pfl-login__field input {
+  border: 1px solid #E1E5F0;
+  border-radius: 10px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #16203A;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  width: 100%;
+}
+
+.pfl-login__field input:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.12);
+}
+
+.pfl-login__field input.is-invalid {
+  border-color: #E3453B;
+}
+
+.pfl-login__field input.is-invalid:focus {
+  box-shadow: 0 0 0 3px rgba(227, 69, 59, 0.12);
+}
+
+.pfl-login__error {
+  font-size: 12px;
+  color: #E3453B;
+}
+
+.pfl-login__password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pfl-login__password-wrap input {
+  padding-right: 56px;
+}
+
+.pfl-login__toggle-visibility {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #3C7DD9;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+.pfl-login__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  margin-top: -4px;
+}
+
+.pfl-login__remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6B7590;
+  cursor: pointer;
+}
+
+.pfl-login__remember input {
+  accent-color: #FF6B35;
+}
+
+.pfl-login__forgot {
+  color: #3C7DD9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pfl-login__forgot:hover {
+  text-decoration: underline;
+}
+
+.pfl-login__submit {
+  margin-top: 4px;
+  background: #FF6B35;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.pfl-login__submit:hover:not(:disabled) {
+  background: #e85a26;
+}
+
+.pfl-login__web {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  background: #FF6B35;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14.5px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.pfl-login__web:hover:not(:disabled) {
+  background: #e85a26;
+}
+
+.pfl-login__submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.pfl-login__footer {
+  text-align: center;
+  font-size: 13px;
+  color: #6B7590;
+  margin: 22px 0 0;
+}
+
+.pfl-login__footer a {
+  color: #FF6B35;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pfl-login__footer a:hover {
+  text-decoration: underline;
+}

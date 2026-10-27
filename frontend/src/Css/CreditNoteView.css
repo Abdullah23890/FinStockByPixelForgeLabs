@@ -1,0 +1,116 @@
+.pfl-cnview {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-cnview__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.pfl-cnview__head h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #16203A;
+}
+
+.pfl-cnview__sub {
+  font-size: 12.5px;
+  color: #6B7590;
+}
+
+.pfl-cnview__status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.pfl-cnview__status--active { background: rgba(255, 107, 53, 0.12); color: #FF6B35; }
+.pfl-cnview__status--used { background: rgba(31, 157, 90, 0.12); color: #1F9D5A; }
+.pfl-cnview__status--expired { background: rgba(227, 69, 59, 0.1); color: #E3453B; }
+
+.pfl-cnview__amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.pfl-cnview__amounts > div {
+  background: #F5F7FB;
+  border: 1px solid #E7EAF3;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pfl-cnview__amounts label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6B7590;
+  text-transform: uppercase;
+}
+
+.pfl-cnview__amounts span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #16203A;
+}
+
+.pfl-cnview__remaining span {
+  color: #FF6B35;
+}
+
+.pfl-cnview__progress-bar {
+  height: 7px;
+  background: #EFF1F7;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.pfl-cnview__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1F9D5A, #6fce9a);
+  border-radius: 999px;
+}
+
+.pfl-cnview__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.pfl-cnview__meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pfl-cnview__meta label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6B7590;
+  text-transform: uppercase;
+}
+
+.pfl-cnview__meta span {
+  font-size: 13px;
+  color: #16203A;
+}
+
+.pfl-cnview__actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 14px;
+  border-top: 1px solid #E7EAF3;
+}

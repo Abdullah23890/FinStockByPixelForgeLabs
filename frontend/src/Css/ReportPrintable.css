@@ -1,0 +1,183 @@
+.pfl-report {
+    font-family: "Inter", sans-serif;
+    color: #16203A;
+    background: #fff;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.pfl-report__header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #FF6B35;
+    margin-bottom: 16px;
+}
+
+.pfl-report__logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.pfl-report__business-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pfl-report__meta {
+    font-size: 12px;
+    color: #6B7590;
+}
+
+.pfl-report__title {
+    font-size: 16px;
+    margin: 0 0 4px;
+}
+
+.pfl-report__date {
+    font-size: 11.5px;
+    color: #8C97B5;
+    margin-bottom: 16px;
+}
+
+.pfl-report__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    margin-bottom: 16px;
+}
+
+.pfl-report__table th {
+    text-align: left;
+    padding: 8px 10px;
+    background: #F5F7FB;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    color: #6B7590;
+}
+
+.pfl-report__table td {
+    padding: 7px 10px;
+    border-top: 1px solid #EFF1F7;
+}
+
+.pfl-report__empty {
+    text-align: center;
+    color: #8C97B5;
+    padding: 20px;
+}
+
+.pfl-report__summary {
+    display: flex;
+    gap: 24px;
+    border-top: 1px dashed #C9CFDC;
+    padding-top: 10px;
+}
+
+.pfl-report__summary div {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.pfl-report__summary strong {
+    font-size: 15px;
+    color: #FF6B35;
+}
+
+.pfl-report__overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.pfl-report__overview-card {
+    background: #F5F7FB;
+    border: 1px solid #E7EAF3;
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pfl-report__overview-label {
+    font-size: 11px;
+    color: #6B7590;
+    text-transform: uppercase;
+}
+
+.pfl-report__overview-value {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media print {
+    @page {
+        margin: 12mm;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #report-print-area,
+    #report-print-area * {
+        visibility: visible;
+    }
+
+    #report-print-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.pfl-reportcard {
+  background: #fff;
+  border: 1px solid #E7EAF3;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pfl-reportcard h4 { margin: 0; font-size: 14.5px; }
+.pfl-reportcard p { margin: 0; font-size: 12.5px; color: #6B7590; flex: 1; }
+
+.pfl-reportcard__btn {
+  border: none;
+  background: #FF6B35;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pfl-reportcard__btn:hover { background: #e85a26; }
+
+.pfl-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.pfl-report-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 14px;
+  background: #F5F7FB;
+  border-radius: 10px;
+}
+
+.pfl-report-filters label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+.pfl-report-filters input, .pfl-report-filters select {
+  border: 1px solid #E1E5F0; border-radius: 7px; padding: 6px 9px; font-size: 12.5px;
+}

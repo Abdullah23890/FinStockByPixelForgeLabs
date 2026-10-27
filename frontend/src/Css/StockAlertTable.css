@@ -1,0 +1,139 @@
+.pfl-satable {
+  background: #ffffff;
+  border: 1px solid #E7EAF3;
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-satable__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.pfl-satable__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #E1E5F0;
+  border-radius: 9px;
+  padding: 8px 13px;
+  color: #6B7590;
+  flex: 1;
+  min-width: 220px;
+}
+
+.pfl-satable__search input {
+  border: none;
+  outline: none;
+  font-size: 13.5px;
+  width: 100%;
+  color: #16203A;
+  background: transparent;
+  font-family: inherit;
+}
+
+.pfl-satable__wrap {
+  overflow-x: auto;
+}
+
+.pfl-satable__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.pfl-satable__table thead th {
+  text-align: left;
+  padding: 12px 18px;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6B7590;
+  background: #F5F7FB;
+  white-space: nowrap;
+}
+
+.pfl-satable__table tbody td {
+  padding: 12px 18px;
+  border-top: 1px solid #EFF1F7;
+  color: #16203A;
+  white-space: nowrap;
+}
+
+.pfl-satable__title {
+  font-weight: 600;
+}
+
+.pfl-satable__barcode {
+  font-family: "Courier New", monospace;
+  font-size: 12.5px;
+  color: #6B7590;
+}
+
+.pfl-satable__qty--low {
+  color: #FF6B35;
+  font-weight: 700;
+}
+
+.pfl-satable__qty--zero {
+  color: #E3453B;
+  font-weight: 700;
+}
+
+.pfl-satable__empty {
+  text-align: center;
+  padding: 40px 20px !important;
+  color: #8C97B5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  white-space: normal !important;
+}
+
+/* Tabs */
+.pfl-satable__tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #E7EAF3;
+  margin-bottom: 16px;
+}
+
+.pfl-satable__tab {
+  border: none;
+  background: none;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6B7590;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pfl-satable__tab.is-active {
+  color: #FF6B35;
+  border-bottom-color: #FF6B35;
+}
+
+.pfl-satable__tab-count {
+  background: #F5F7FB;
+  color: #6B7590;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 999px;
+}
+
+.pfl-satable__tab.is-active .pfl-satable__tab-count {
+  background: rgba(255, 107, 53, 0.12);
+  color: #FF6B35;
+}

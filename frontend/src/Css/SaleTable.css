@@ -1,0 +1,176 @@
+.pfl-saletable {
+  background: #ffffff;
+  border: 1px solid #E7EAF3;
+  border-radius: 14px;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-saletable__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #E7EAF3;
+  flex-wrap: wrap;
+}
+
+.pfl-saletable__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #E1E5F0;
+  border-radius: 9px;
+  padding: 8px 13px;
+  color: #6B7590;
+  flex: 1;
+  min-width: 200px;
+}
+
+.pfl-saletable__search input {
+  border: none;
+  outline: none;
+  font-size: 13.5px;
+  width: 100%;
+  color: #16203A;
+  background: transparent;
+  font-family: inherit;
+}
+
+.pfl-saletable__select {
+  border: 1px solid #E1E5F0;
+  border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #16203A;
+  background: #fff;
+  font-family: inherit;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.pfl-saletable__add-btn {
+  background: #FF6B35;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.pfl-saletable__add-btn:hover {
+  background: #e85a26;
+}
+
+.pfl-saletable__wrap {
+  overflow-x: auto;
+}
+
+.pfl-saletable__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.pfl-saletable__table thead th {
+  text-align: left;
+  padding: 12px 18px;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6B7590;
+  background: #F5F7FB;
+  white-space: nowrap;
+}
+
+.pfl-saletable__table tbody td {
+  padding: 12px 18px;
+  border-top: 1px solid #EFF1F7;
+  color: #16203A;
+  white-space: nowrap;
+}
+
+.pfl-saletable__number {
+  font-weight: 600;
+}
+
+.pfl-saletable__channel {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.pfl-saletable__channel--retail { background: rgba(60, 125, 217, 0.12); color: #3C7DD9; }
+.pfl-saletable__channel--wholeSale { background: rgba(18, 165, 148, 0.12); color: #12A594; }
+.pfl-saletable__channel--parlor { background: rgba(124, 92, 252, 0.12); color: #7C5CFC; }
+
+.pfl-saletable__status {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.pfl-saletable__status--paid { background: rgba(31, 157, 90, 0.12); color: #1F9D5A; }
+.pfl-saletable__status--partial { background: rgba(255, 107, 53, 0.12); color: #FF6B35; }
+.pfl-saletable__status--unPaid { background: rgba(227, 69, 59, 0.1); color: #E3453B; }
+
+.pfl-saletable__actions-col {
+  text-align: right;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.pfl-saletable__action-btn {
+  border: 1px solid #E1E5F0;
+  background: #fff;
+  color: #16203A;
+  border-radius: 7px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pfl-saletable__action-btn:hover {
+  background: #F5F7FB;
+}
+
+.pfl-saletable__action-btn--primary {
+  background: #FF6B35;
+  color: #fff;
+  border-color: #FF6B35;
+}
+
+.pfl-saletable__action-btn--primary:hover {
+  background: #e85a26;
+}
+
+.pfl-saletable__action-btn--danger {
+  color: #E3453B;
+  border-color: #F5C6BE;
+}
+
+.pfl-saletable__action-btn--danger:hover {
+  background: #FDEDEA;
+}
+
+.pfl-saletable__empty {
+  text-align: center;
+  padding: 40px 20px !important;
+  color: #8C97B5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  white-space: normal !important;
+}

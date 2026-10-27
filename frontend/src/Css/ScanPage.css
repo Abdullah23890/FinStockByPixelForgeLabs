@@ -1,0 +1,133 @@
+.pfl-scanpage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-scanpage__form {
+  max-width: 400px;
+}
+
+.pfl-scanpage__input {
+  width: 100%;
+  border: 2px solid #FF6B35;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 16px;
+  outline: none;
+}
+
+.pfl-scanpage__error {
+  background: #FDEDEA;
+  border: 1px solid #F5C6BE;
+  color: #B3261E;
+  padding: 10px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.pfl-scanpage__card {
+  background: #fff;
+  border: 1px solid #E7EAF3;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 500px;
+}
+
+.pfl-scanpage__card--customer {
+  text-align: center;
+}
+
+.pfl-scanpage__card--customer h2 {
+  font-size: 24px;
+  margin: 0 0 14px;
+}
+
+.pfl-scanpage__price {
+  font-size: 40px;
+  font-weight: 800;
+  color: #FF6B35;
+}
+
+.pfl-scanpage__expiry {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6B7590;
+}
+
+.pfl-scanpage__ws-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.pfl-scanpage__ws-head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.pfl-scanpage__barcode {
+  font-family: monospace;
+  font-size: 12px;
+  color: #6B7590;
+}
+
+.pfl-scanpage__ws-prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pfl-scanpage__ws-prices > div {
+  background: #F5F7FB;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pfl-scanpage__ws-prices label {
+  font-size: 10.5px;
+  color: #6B7590;
+  text-transform: uppercase;
+}
+
+.pfl-scanpage__ws-prices span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pfl-scanpage__ws-total-qty {
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.pfl-scanpage__ws-batches table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.pfl-scanpage__ws-batches th {
+  text-align: left;
+  padding: 6px 8px;
+  background: #F5F7FB;
+  font-size: 10.5px;
+  text-transform: uppercase;
+}
+
+.pfl-scanpage__ws-batches td {
+  padding: 6px 8px;
+  border-top: 1px solid #EFF1F7;
+}
+
+.pfl-scanpage__empty {
+  color: #8C97B5;
+  font-size: 13px;
+}

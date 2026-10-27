@@ -1,0 +1,183 @@
+.pfl-receipt {
+  font-family: "Courier New", monospace;
+  color: #16203A;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.pfl-receipt--thermal {
+  width: 280px;
+  padding: 14px;
+  font-size: 11.5px;
+}
+
+.pfl-receipt--a4 {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 13.5px;
+}
+
+.pfl-receipt__header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pfl-receipt__logo {
+  max-width: 60px;
+  max-height: 60px;
+  margin: 0 auto 8px;
+  display: block;
+  object-fit: contain;
+}
+
+.pfl-receipt--a4 .pfl-receipt__logo {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.pfl-receipt__business-name {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.pfl-receipt--a4 .pfl-receipt__business-name {
+  font-size: 20px;
+}
+
+.pfl-receipt__meta-line {
+  font-size: 10.5px;
+  color: #6B7590;
+}
+
+.pfl-receipt--a4 .pfl-receipt__meta-line {
+  font-size: 12.5px;
+}
+
+.pfl-receipt__divider {
+  border-top: 1px dashed #C9CFDC;
+  margin: 10px 0;
+}
+
+.pfl-receipt--a4 .pfl-receipt__divider {
+  border-top: 1px solid #E7EAF3;
+}
+
+.pfl-receipt__info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.pfl-receipt__items {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pfl-receipt__items th {
+  text-align: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #C9CFDC;
+  padding: 4px 2px;
+}
+
+.pfl-receipt--a4 .pfl-receipt__items th {
+  font-size: 11px;
+  padding: 8px 6px;
+  background: #F5F7FB;
+}
+
+.pfl-receipt__items td {
+  padding: 4px 2px;
+  font-size: 10.5px;
+}
+
+.pfl-receipt--a4 .pfl-receipt__items td {
+  padding: 8px 6px;
+  font-size: 12.5px;
+  border-top: 1px solid #EFF1F7;
+}
+
+.pfl-receipt__col-center { text-align: center; }
+.pfl-receipt__col-right { text-align: right; }
+
+.pfl-receipt__totals-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.pfl-receipt__totals-row--grand {
+  font-weight: 700;
+  border-top: 1px dashed #C9CFDC;
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+.pfl-receipt__totals-row--due {
+  font-weight: 700;
+  color: #E3453B;
+}
+
+.pfl-receipt__footer {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 10.5px;
+  color: #6B7590;
+}
+
+.pfl-receipt--a4 .pfl-receipt__footer {
+  font-size: 12.5px;
+}
+
+/* ===== Print rules ===== */
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #sale-print-area,
+  #sale-print-area * {
+    visibility: visible;
+  }
+
+  #sale-print-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .pfl-receipt--thermal {
+    width: 80mm;
+    padding: 4mm;
+  }
+
+  .pfl-receipt--a4 {
+    width: 210mm;
+    padding: 15mm;
+    max-width: none;
+  }
+
+  .pfl-receipt__logo,
+  .pfl-receipt__items th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+.pfl-receipt-hidden-wrapper {
+  display: none;
+}
+
+@media print {
+  .pfl-receipt-hidden-wrapper {
+    display: block;
+  }
+}

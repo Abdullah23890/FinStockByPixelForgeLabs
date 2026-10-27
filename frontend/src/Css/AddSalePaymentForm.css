@@ -1,0 +1,89 @@
+.pfl-salepay {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-salepay__server-error {
+  background: #FDEDEA;
+  border: 1px solid #F5C6BE;
+  color: #B3261E;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 9px;
+}
+
+.pfl-salepay__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #F5F7FB;
+  border: 1px solid #E7EAF3;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.pfl-salepay__summary > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #16203A;
+}
+
+.pfl-salepay__summary label {
+  color: #6B7590;
+  font-weight: 600;
+}
+
+.pfl-salepay__summary-due span {
+  color: #E3453B;
+  font-weight: 700;
+}
+
+.pfl-salepay__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pfl-salepay__field label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #16203A;
+}
+
+.pfl-salepay__field input,
+.pfl-salepay__field select {
+  border: 1px solid #E1E5F0;
+  border-radius: 9px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #16203A;
+  outline: none;
+  background: #fff;
+}
+
+.pfl-salepay__field input:focus,
+.pfl-salepay__field select:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.12);
+}
+
+.pfl-salepay__field input.is-invalid {
+  border-color: #E3453B;
+}
+
+.pfl-salepay__error {
+  font-size: 11.5px;
+  color: #E3453B;
+}
+
+.pfl-salepay__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #E7EAF3;
+}

@@ -1,0 +1,82 @@
+.pfl-batprofile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.pfl-batprofile__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.pfl-batprofile__head h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: #16203A;
+}
+
+.pfl-batprofile__batchno {
+  font-family: "Courier New", monospace;
+  font-size: 12.5px;
+  color: #6B7590;
+}
+
+.pfl-batprofile__expiry {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.pfl-batprofile__expiry--ok { background: rgba(31, 157, 90, 0.12); color: #1F9D5A; }
+.pfl-batprofile__expiry--nearExpiry { background: rgba(255, 107, 53, 0.12); color: #FF6B35; }
+.pfl-batprofile__expiry--expired { background: rgba(227, 69, 59, 0.1); color: #E3453B; }
+
+.pfl-batprofile__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 16px;
+}
+
+.pfl-batprofile__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pfl-batprofile__item--full {
+  grid-column: 1 / -1;
+}
+
+.pfl-batprofile__item label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #6B7590;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.pfl-batprofile__item span {
+  font-size: 13.5px;
+  color: #16203A;
+}
+
+.pfl-batprofile__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid #E7EAF3;
+}
+
+@media (max-width: 480px) {
+  .pfl-batprofile__grid {
+    grid-template-columns: 1fr;
+  }
+}
