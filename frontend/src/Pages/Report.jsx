@@ -130,9 +130,9 @@ export default function Report() {
       case "customer":
         setResult(buildCustomerReport(raw.customers, raw.sales, raw.creditNotes, filters));
         break;
-      case "expiry":
-        setResult(buildExpiryReport(raw.batches, filters));
-        break;
+      // case "expiry":
+      //   setResult(buildExpiryReport(raw.batches, filters));
+      //   break;
       case "topProducts":
         setResult(buildTopProductsReport(raw.sales, filters));
         break;
